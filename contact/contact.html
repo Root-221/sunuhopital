@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - SunuHopital.sn</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../Acceuil/acceuil.css">
+  <!-- Custom Styles -->
+  <style>
+    .contact-info {
+      font-size: 1.2rem;
+    }
+    .input-group-text {
+      background-color: transparent;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="../Acceuil/images/logo.png" alt="Logo" width="70" height="55" class="d-inline-block align-top">
+      SunuHopital
+    </a>
+    
+    <!-- Bouton de bascule pour mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Liens -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../Acceuil/acceuil.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../faire_don/faire_don.html">Faire un Don</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../nos_services/nos_services.html">Nos Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact/contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Connexion/connexion.html"><button class="btn btn-primary">Se Connecter</button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="spacer"></div> 
+
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <h1 class="mb-4">Contactez-nous</h1>
+      <p class="lead">Nous sommes là pour répondre à vos questions et vous fournir toute l'assistance dont vous avez besoin. N'hésitez pas à nous contacter.</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <div class="contact-info">
+        <h3>Coordonnées</h3>
+        <p><i class="bi bi-geo-alt-fill"></i> 123, Rue de l'Hôpital, Dakar, Sénégal</p>
+        <p><i class="bi bi-envelope-fill"></i> info@sunnuhospital.com</p>
+        <p><i class="bi bi-telephone-fill"></i> +1234567890</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="name" placeholder="Votre nom">
+            <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <div class="input-group">
+            <input type="email" class="form-control" id="email" placeholder="Votre email">
+            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Votre message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Conditions d'utilisation</h5>
+        <p>Insérez ici les conditions d'utilisation de votre site.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Réseaux Sociaux</h5>
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li class="me-4"><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li class="me-4"><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="me-4"><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Adresse</h5>
+        <p>123, Rue de l'Hôpital<br>Dakar, Sénégal</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Contact</h5>
+        <p>Email: info@sunnuhospital.com<br>Téléphone: +1234567890</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

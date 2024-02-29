@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'administration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Ajoutez votre style personnalisé ici si nécessaire */
+        .navbar {
+            background-color: white !important; /* Couleur de fond du nav bar */
+        }
+
+        .navbar-brand {
+            display: flex;
+            flex-direction: row; /* Alignement horizontal */
+            align-items: center; /* Centrer verticalement */
+            justify-content: center; /* Centrer horizontalement */
+            color: blue; /* Couleur du texte en bleu */
+            font-size: 24px; /* Taille de la police */
+            font-weight: bold; /* Police en gras */
+            font-family: Arial, sans-serif; /* Police personnalisée */
+        }
+
+        .navbar-brand img {
+            margin-right: 10px; /* Marge à droite de l'image */
+        }
+
+        .navbar-brand-text {
+            font-weight: bold; /* Texte en gras */
+            font-style: italic; /* Texte en italique */
+            color: black; /* Couleur du texte en noir */
+        }
+
+        .nav-link {
+            font-size: 18px; /* Augmentez la taille du texte */
+            font-weight: bold; /* Mettez le texte en gras */
+        }
+
+        .logout-btn {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px; /* Bord arrondi */
+        }
+
+        main {
+            background-image: url('../Acceuil/images/back.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+            background-size: cover;
+            background-position: center;
+            color: black; /* Couleur du texte en noir */
+            text-align: center;
+            padding: 50px 0;
+            height: calc(100vh - 56px); /* Hauteur de l'écran moins la hauteur de la navbar */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        main h1, main h3 {
+            font-weight: bold; /* Texte en gras */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Acceuil/images/logo.png" alt="Logo de votre application" width="60" height="60">
+                <span class="navbar-brand-text">SunuHopital</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../administrateur/medecin.html">Médecins</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Patients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rendez-vous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="logout-btn" class="btn btn-sm logout-btn">Se Déconnecter</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Bienvenue dans la page administrateur</h1>
+                    <h3>Gérez facilement les données de votre hôpital</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Conditions d'utilisation</h5>
+                    <p>Insérez ici les conditions d'utilisation de votre site.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Réseaux Sociaux</h5>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="me-4"><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
+                        <li class="me-4"><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li class="me-4"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5>Adresse</h5>
+                    <p>123, Rue de l'Hôpital<br>Dakar, Sénégal</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact</h5>
+                    <p>Email: info@sunnuhospital.com<br>Téléphone: +1234567890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS et jQuery (facultatif, à inclure si nécessaire) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!-- Script JavaScript pour gérer la déconnexion avec confirmation -->
+     <script>
+            // Sélectionnez le bouton de déconnexion
+            var logoutBtn = document.getElementById('logout-btn');
+
+            // Ajoutez un écouteur d'événements de clic au bouton de déconnexion
+            logoutBtn.addEventListener('click', function() {
+                // Affichez une boîte de dialogue de confirmation
+                var confirmation = confirm("Êtes-vous sûr de vouloir vous déconnecter ?");
+                
+                // Si l'utilisateur confirme, redirigez-le vers la page de déconnexion appropriée
+                if (confirmation) {
+                    window.location.href = "../Connexion/connexion.html";
+                }
+       });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page des médecins</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Ajoutez votre style personnalisé ici si nécessaire */
+        html,
+        body {
+            height: 100%;
+        }
+
+        .navbar {
+            background-color: #f8f9fa;
+            padding: 14px 10px;
+        }
+
+        .navbar-brand {
+            color: blue;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar-brand img {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav {
+            flex-direction: row;
+        }
+
+        .nav-link {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .logout-btn {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 8px 20px;
+        }
+
+        main {
+            height: calc(100vh - 56px); /* Calcul de la hauteur de l'écran moins la hauteur de la barre de navigation */
+            background-image: url('../Acceuil/images/back1.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        main h1,
+        main h3 {
+            font-weight: bold; /* Mettre le texte en gras */
+            color: black; /* Couleur du texte en noir */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="../Acceuil/images/logo.png" alt="Logo de votre application" width="60" height="60">
+                <span class="navbar-brand-text">SunuHopital</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../administrateur/administrateur.html">Accueil <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../administrateur/ajouter_medecin.html" onclick="showAddMedecinForm()">Ajouter-Médecin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showDeleteMedecinForm()">Rechercher-Médecin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../administrateur/supprimer_medecin.html" onclick="showDeleteMedecinForm()">Supprimer-Médecin</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="logout-btn" class="btn btn-sm logout-btn">Se Déconnecter</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div>
+            <h1>Bienvenue dans la page des médecins</h1>
+            <h3>Vous pouvez ajouter ou supprimer des médecins</h3>
+            <!-- Ajoutez d'autres contenus ici si nécessaire -->
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Conditions d'utilisation</h5>
+                    <p>Insérez ici les conditions d'utilisation de votre site.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Réseaux Sociaux</h5>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="me-4"><a href="#"><i class="fab fa-facebook fa-lg"></i></a></li>
+                        <li class="me-4"><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li class="me-4"><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5>Adresse</h5>
+                    <p>123, Rue de l'Hôpital<br>Dakar, Sénégal</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact</h5>
+                    <p>Email: info@sunnuhospital.com<br>Téléphone: +1234567890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Sélectionnez le bouton de déconnexion
+        var logoutBtn = document.getElementById('logout-btn');
+    
+        // Ajoutez un écouteur d'événements de clic au bouton de déconnexion
+        logoutBtn.addEventListener('click', function() {
+            // Affichez une boîte de dialogue de confirmation
+            var confirmation = confirm("Êtes-vous sûr de vouloir vous déconnecter ?");
+            
+            // Si l'utilisateur confirme, redirigez-le vers la page de déconnexion appropriée
+            if (confirmation) {
+                window.location.href = "../Connexion/connexion.html";
+            }
+        });
+    </script>
+</body>
+
+</html>

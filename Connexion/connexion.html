@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - SunuHopital.sn</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../Acceuil/acceuil.css">
+  <link rel="stylesheet" href="../Connexion/connexion.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="../Acceuil/images/logo.png" alt="Logo" width="70" height="55" class="d-inline-block align-top">
+      SunuHopital
+    </a>
+    
+    <!-- Bouton de bascule pour mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Liens -->
+    <div class="collapse navbar-collapse flex-grow-1" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../Acceuil/acceuil.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact/contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Logo de l'hôpital au centre -->
+<div class="logo-center">
+  <img src="../Acceuil/images/logo.png" alt="Logo" width="150" height="120">
+</div>
+
+<div class="login-container">
+  <h2 class="text-center">Connexion</h2>
+  <form method="post" action="connexion.php">
+    <div class="mb-3 position-relative">
+        <input type="email" class="form-control form-control-icon" id="email" name="email" placeholder="Adresse e-mail" required>
+        <i class="bi bi-envelope-fill login-icon"></i>
+    </div>
+    <div class="mb-3 position-relative">
+        <input type="password" class="form-control form-control-icon" id="password" name="password" placeholder="Mot de passe" required>
+        <i class="bi bi-lock-fill login-icon"></i>
+        <i class="bi bi-eye-slash toggle-password" onclick="togglePasswordVisibility()"></i>
+    </div>
+    <button type="submit" class="btn btn-primary login-btn">Se Connecter</button>
+    <div class="text-center mt-3">
+        <a href="../Inscription/inscription.html" class="register-link">Nouveau? Inscrivez-vous ici</a>
+    </div>
+    <!-- Section pour afficher les erreurs -->
+    <div id="error-message" class="text-danger"><?php if(isset($error_message)) { echo $error_message; } ?></div>
+    <div class="text-center mt-3">
+        <a href="motdepasseoublie.html" class="forgot-password-link">Mot de passe oublié?</a>
+    </div>
+    <hr>
+    <div class="text-center">
+        <button type="button" class="btn btn-danger"><i class="bi bi-google"></i> Se connecter avec Google</button>
+    </div>
+</form>
+</div>
+<div class="spacer mb-4"></div> 
+
+<footer class="bg-dark text-white text-center py-5 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Conditions d'utilisation</h5>
+        <p>Insérez ici les conditions d'utilisation de votre site.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Réseaux Sociaux</h5>
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li class="me-4"><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li class="me-4"><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="me-4"><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Adresse</h5>
+        <p>123, Rue de l'Hôpital<br>Dakar, Sénégal</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Contact</h5>
+        <p>Email: info@sunnuhospital.com<br>Téléphone: +1234567890</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="../Connexion/connexion.js"></script>
+</body>
+</html>

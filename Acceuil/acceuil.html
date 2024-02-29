@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SunuHopital.sn</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Acceuil/acceuil.css">
+ 
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="../Acceuil/images/logo.png" alt="Logo" width="70" height="55" class="d-inline-block align-top">
+        SunuHopital<!-- Nom de votre entreprise -->
+      </a>
+      
+      <!-- Barre de recherche
+      <form class="d-flex flex-grow-1">
+        <input class="form-control me-2 w-100" type="search" placeholder="Recherche Services" aria-label="Recherche">
+        <button class="btn btn-outline-success" type="submit">Rechercher</button>
+      </form> -->
+      
+      <!-- Bouton pour mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Liens -->
+      <div class="collapse navbar-collapse flex-grow-1" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../faire_don/faire_don.html">Faire un Don</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../nos_services/nos_services.html">Nos Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../contact/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Connexion/connexion.html"><button class="btn btn-primary">Se Connecter</button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+<div class="spacer"></div> 
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../Acceuil/images/back3.jpg" class="d-block w-100" alt="Image 1">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="text-center text-light">
+          <h1>Nous Créons un plan de santé <br> numérique pour chacun de nos clients</h1>
+          <h4>Prenez le contrôle de votre bien-être: <br>Connectez-vous et planifiez votre visite <br> dès maintenant</h4>
+          <button class="btn btn-outline-light mt-3">Read More</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../Acceuil/images/carousel2.jpg" class="d-block w-100" alt="Image 2">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="text-center text-light">
+          <h1>Rendez-vous</h1>
+          <h4>Prenez rendez-vous dès maintenant pour une consultation.</h4>
+          <a href="../Connexion/connexion.html"><button class="btn btn-outline-light">Rendez-Vous</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../Acceuil/images/carousel4.jpg" class="d-block w-100" alt="Image 3">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="text-center text-light">
+          <h1>Nos Services</h1>
+          <h4>Explorez nos différents services médicaux pour répondre à vos besoins de santé.</h4>
+          <a href="../nos_services/nos_services.html"><button class="btn btn-outline-light">En savoir plus</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../Acceuil/images/carousel3.jpg" class="d-block w-100" alt="Image 4">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="text-center text-light">
+          <h1>Galerie</h1>
+          <h4>Découvrez notre galerie d'images pour voir nos installations et notre équipe médicale.</h4>
+          <button class="btn btn-outline-light">Galerie</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../Acceuil/images/carousel5.jpg" class="d-block w-100" alt="Image 5">
+      <div class="carousel-caption d-flex align-items-center justify-content-center">
+        <div class="text-center text-light">
+          <h1>Contactez-nous</h1>
+          <h4>Contactez-nous pour toute question ou pour prendre rendez-vous.</h4>
+          <a href="../contact/contact.html"><button class="btn btn-outline-light">Contact</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Précédent</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Suivant</span>
+  </button>
+</div>
+
+
+<!-- Conteneur pour les médecins -->
+<div class="container mt-4">
+  <h1 class="fw-bold mb-4 medecins">Nos Médecins</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="doctor-column">
+        <img src="../Acceuil/images/bakary.jpg" alt="Doctor 1" class="doctor-image">
+        <h2 class="doctor-name">Dr. Bakary Diassy</h2>
+        <div class="doctor-rating">★★★★★</div>
+        <p class="doctor-specialty">Cardiologue</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="doctor-column">
+        <img src="../Acceuil/images/fallou.jpg" alt="Doctor 2" class="doctor-image">
+        <h2 class="doctor-name">Dr. Aziz Gueye</h2>
+        <div class="doctor-rating">★★★★★</div>
+        <p class="doctor-specialty">Pédiatre</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="doctor-column">
+        <img src="../Acceuil/images/aliou.jpg" alt="Doctor 3" class="doctor-image">
+        <h2 class="doctor-name">Dr. Aliou Thielo</h2>
+        <div class="doctor-rating">★★★★★</div>
+        <p class="doctor-specialty">Gynécologue</p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="doctor-column">
+        <img src="../Acceuil/images/fatou.jpg" alt="Doctor 4" class="doctor-image">
+        <h2 class="doctor-name">Dr. Aida Niang</h2>
+        <div class="doctor-rating">★★★★★</div>
+        <p class="doctor-specialty">Dermatologue</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="doctor-column">
+        <img src="../Acceuil/images/bineta.jpg" alt="Doctor 5" class="doctor-image">
+        <h2 class="doctor-name">Dr. Korka Sow</h2>
+        <div class="doctor-rating">★★★★★</div>
+        <p class="doctor-specialty">Psychiatre</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="doctor-column">
+        <img src="../Acceuil/images/image.jpg" alt="Doctor 6" class="doctor-image">
+        <h2 class="doctor-name">Dr. Fallou Aicha</h2>
+        <div class="doctor-rating">★★★★★</div>
+        <p class="doctor-specialty">Dentiste</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section avec des icônes -->
+<div class="container mt-5">
+  <div class="row text-center">
+    <!-- Première colonne -->
+    <div class="col">
+      <a href="#" class="text-decoration-none">
+        <i class="bi bi-clipboard-check text-deep-purple" style="font-size: 3rem;"></i>
+        <p class="text-dark mt-3">Consultation</p>
+      </a>
+    </div>
+    <!-- Deuxième colonne -->
+    <div class="col">
+      <a href="#" class="text-decoration-none">
+        <i class="bi bi-calendar2-check text-rose" style="font-size: 3rem;"></i>
+        <p class="text-dark mt-3">Rendez-vous</p>
+      </a>
+    </div>
+    <!-- Troisième colonne -->
+    <div class="col">
+      <a href="#" class="text-decoration-none">
+        <i class="bi bi-diagram-2 text-blue" style="font-size: 3rem;"></i>
+        <p class="text-dark mt-3">Services</p>
+      </a>
+    </div>
+    <!-- Quatrième colonne -->
+    <div class="col">
+      <a href="#" class="text-decoration-none">
+        <i class="bi bi-plus text-deep-purple" style="font-size: 3rem;"></i>
+        <p class="text-dark mt-3">Urgences médicales</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Conteneur pour les services -->
+<div class="services-container">
+  <h1 class="fw-bold mb-4 nos-services">Nos Services</h1>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="service-column">
+        <i class="bi bi-heart-fill service-icon"></i>
+        <h2>Cardiologie</h2>
+        <p>Notre service de cardiologie offre des traitements avancés pour les maladies cardiaques.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-column">
+        <i class="bi bi-diagram-2-fill service-icon"></i>
+        <h2>Imagerie Médicale</h2>
+        <p>Notre département d'imagerie médicale est équipé des technologies les plus récentes pour un diagnostic précis.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-column">
+        <i class="bi bi-people-fill service-icon"></i>
+        <h2>Soins Infirmiers</h2>
+        <p>Nos infirmières dévouées offrent des soins professionnels et compatissants à tous nos patients.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-4">
+      <div class="service-column">
+        <i class="bi bi-hospital-fill service-icon"></i>
+        <h2>Urgences</h2>
+        <p>Notre service d'urgences est ouvert 24h/24 pour répondre à tous les besoins médicaux urgents.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-column">
+        <i class="bi bi-chat-dots-fill service-icon"></i>
+        <h2>Conseils en Ligne</h2>
+        <p>Consultez nos experts médicaux en ligne pour obtenir des conseils et des recommandations.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-column">
+        <i class="bi bi-diagram-2-fill service-icon"></i>
+        <h2>Chirurgie</h2>
+        <p>Notre équipe de chirurgiens qualifiés offre une gamme complète de services chirurgicaux.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Conteneur pour le mot du directeur -->
+<div class="container-fluid vh-60 d-flex align-items-center mb-5" style="background-color: blue;">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../Acceuil/images/Dr_Babacar.png" alt="Directeur" class="img-fluid rounded-start" style="max-height: 100%;">
+    </div>
+    <div class="col-md-6 d-flex align-items-center">
+      <div class="text-white">
+        <h2 class="fw-bold mb-4">Mot du Directeur</h2><span class="bakary">"</span>
+          Chères équipes et précieux patients, <br>
+          Au nom de toute l'équipe de SunuHôpital, je suis ravi de vous accueillir dans notre établissement de santé. Chez SunuHôpital, notre priorité est votre bien-être et votre santé. Nous nous engageons à fournir des soins de qualité, personnalisés et accessibles à tous.
+          Depuis notre création, nous nous efforçons de devenir un acteur majeur dans le domaine de la santé, en offrant des services médicaux de pointe et en investissant dans les technologies les plus avancées. Notre équipe de professionnels de la santé est dévouée à vous fournir les meilleurs soins possibles, dans un environnement accueillant et bienveillant.
+          Nous sommes fiers de la confiance que vous nous accordez et nous nous engageons à toujours faire de notre mieux pour répondre à vos besoins. Chez SunuHôpital, votre santé est notre priorité absolue.
+          Je vous remercie de votre confiance continue et je vous invite à nous faire part de vos commentaires et suggestions afin que nous puissions continuer à améliorer nos services.
+          Bien cordialement, <span class="bakary">"</span><br><br> 
+          Dr Dr Babacar Diop
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section des pandémies récentes -->
+<div class="container mt-5 mb-5">
+  <h2 class="text-center mb-4">Pandémies Récentes</h2>
+  <div class="row">
+    <!-- Première colonne -->
+    <div class="col-md-4">
+      <div class="pandemie-column text-center bg-light">
+        <img src="../Acceuil/images/covid.jpg" alt="Pandémie 1" class="img-fluid">
+        <h3 class="mt-3">Pandémie de COVID-19 (2019-2021)</h3>
+        <p>
+          La pandémie de COVID-19, causée par le virus SARS-CoV-2, a commencé en décembre 2019 à Wuhan, en Chine, et s'est rapidement propagée à travers le monde, affectant des millions de personnes.
+        </p>
+        <a href="https://fr.wikipedia.org/wiki/Pand%C3%A9mie_de_Covid-19" target="_blank" class="btn btn-primary">En savoir plus sur Wikipedia</a>
+      </div>
+    </div>
+    <!-- Deuxième colonne -->
+    <div class="col-md-4">
+      <div class="pandemie-column text-center bg-light">
+        <img src="../Acceuil/images/gripp.jpg" alt="Pandémie 2" class="img-fluid">
+        <h3 class="mt-3">Pandémie de grippe H1N1 (2009-2010)</h3>
+        <p>
+          La pandémie de grippe H1N1, également connue sous le nom de grippe porcine, a émergé en 2009 et s'est rapidement propagée à l'échelle mondiale. Bien que moins grave que prévu initialement, elle a tout de même entraîné des décès et des hospitalisations dans de nombreux pays.
+        </p>
+        <a href="https://fr.wikipedia.org/wiki/Grippe_A(H1N1)_de_2009" target="_blank" class="btn btn-primary">En savoir plus sur Wikipedia</a>
+      </div>
+    </div>
+    <!-- Troisième colonne -->
+    <div class="col-md-4">
+      <div class="pandemie-column text-center bg-light">
+        <img src="../Acceuil/images/espagnol.jpg" alt="Pandémie 3" class="img-fluid">
+        <h3 class="mt-3">Pandémie de grippe espagnole (1918-1919)</h3>
+        <p>
+          La grippe espagnole a été l'une des pandémies les plus meurtrières de l'histoire, infectant environ un tiers de la population mondiale et entraînant la mort de millions de personnes. Elle a eu un impact dévastateur sur le monde entier, y compris sur les économies et les systèmes de santé.
+        </p>
+        <a href="https://fr.wikipedia.org/wiki/Grippe_espagnole" target="_blank" class="btn btn-primary">En savoir plus sur Wikipedia</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Conditions d'utilisation</h5>
+        <p>Insérez ici les conditions d'utilisation de votre site.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Réseaux Sociaux</h5>
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li class="me-4"><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li class="me-4"><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="me-4"><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Adresse</h5>
+        <p>123, Rue de l'Hôpital<br>Dakar, Sénégal</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Contact</h5>
+        <p>Email: info@sunnuhospital.com<br>Téléphone: +1234567890</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

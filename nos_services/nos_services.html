@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Services - SunuHopital.sn</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../Acceuil/acceuil.css">
+  <!-- Custom Styles -->
+  <style>
+    .service-icon {
+      font-size: 3rem;
+    }
+    .service-card {
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="../Acceuil/images/logo.png" alt="Logo" width="70" height="55" class="d-inline-block align-top">
+      SunuHopital
+    </a>
+    
+    <!-- Bouton de bascule pour mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Liens -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../Acceuil/acceuil.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../faire_don/faire_don.html">Faire un Don</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../nos_services/nos_services.html">Nos Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../contact/contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Connexion/connexion.html"><button class="btn btn-primary">Se Connecter</button></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="spacer"></div> 
+
+<div class="container mb-4">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 text-center">
+      <h1 class="mb-4">Nos Services</h1>
+      <p class="lead">Nous offrons une gamme complète de services de santé pour répondre aux besoins de nos patients. Découvrez ce que nous proposons.</p>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <div class="card h-100 service-card">
+        <img src="../Acceuil/images/cardiologue.jpg" class="card-img-top" alt="Cardiologie">
+        <div class="card-body">
+          <i class="bi bi-heart service-icon"></i>
+          <h5 class="card-title">Cardiologie</h5>
+          <p class="card-text">Notre service de cardiologie propose des diagnostics avancés et des traitements pour les maladies cardiaques.</p>
+          <a href="#" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 service-card">
+        <img src="../Acceuil/images/imagerie.jpg" class="card-img-top" alt="Imagerie Médicale">
+        <div class="card-body">
+          <i class="bi bi-diagram-2 service-icon"></i>
+          <h5 class="card-title">Imagerie Médicale</h5>
+          <p class="card-text">Notre département d'imagerie médicale dispose des dernières technologies pour des diagnostics précis.</p>
+          <a href="#" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 service-card">
+        <img src="../Acceuil/images/infirmiére.jpg" class="card-img-top" alt="Soins Infirmiers">
+        <div class="card-body">
+          <i class="bi bi-people service-icon"></i>
+          <h5 class="card-title">Soins Infirmiers</h5>
+          <p class="card-text">Nos infirmières dévouées fournissent des soins professionnels et compatissants à tous nos patients.</p>
+          <a href="#" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <div class="card h-100 service-card">
+        <img src="../Acceuil/images/dentiste.jpg" class="card-img-top" alt="Dentiste">
+        <div class="card-body">
+            <i class="bi bi-diagram-2 service-icon"></i>
+          <h5 class="card-title">Dentiste</h5>
+          <p class="card-text">Notre service de dentisterie propose des soins dentaires complets pour des sourires sains.</p>
+          <a href="#" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 service-card">
+        <img src="../Acceuil/images/chirurgien.jpg" class="card-img-top" alt="Chirurgien">
+        <div class="card-body">
+          <i class="bi bi-tools service-icon"></i>
+          <h5 class="card-title">Chirurgien</h5>
+          <p class="card-text">Nos chirurgiens qualifiés offrent une gamme complète de services chirurgicaux pour traiter diverses affections.</p>
+          <a href="#" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 service-card">
+        <img src="../Acceuil/images/ophthalmo.jpg" class="card-img-top" alt="Ophtalmologue">
+        <div class="card-body">
+          <i class="bi bi-eye service-icon"></i>
+          <h5 class="card-title">Ophtalmologue</h5>
+          <p class="card-text">Notre service d'ophtalmologie propose des examens de la vue complets et des traitements pour les affections oculaires.</p>
+          <a href="#" class="btn btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Conditions d'utilisation</h5>
+        <p>Insérez ici les conditions d'utilisation de votre site.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Réseaux Sociaux</h5>
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li class="me-4"><a href="#"><i class="bi bi-facebook"></i></a></li>
+          <li class="me-4"><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li class="me-4"><a href="#"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h5>Adresse</h5>
+        <p>123, Rue de l'Hôpital<br>Dakar, Sénégal</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Contact</h5>
+        <p>Email: info@sunnuhospital.com<br>Téléphone: +1234567890</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

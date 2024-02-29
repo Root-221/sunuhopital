@@ -1,0 +1,22 @@
+.logout-btn {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px; /* Bord arrondi */
+}
+.star{
+    color: yellow;
+}
+.medecin-container {
+    background-color: #f0f0f0; /* Gris clair */
+    border-radius: 10px; /* Bord arrondi */
+    padding: 20px; /* Espacement intérieur */
+    margin-bottom: 20px; /* Espacement entre les conteneurs */
+    overflow: hidden; /* Pour cacher les parties de l'image qui dépassent du conteneur */
+  }
+
+  .medecin-container img {
+    width: 100%; /* Pour que l'image prenne toute la largeur du conteneur */
+    height: auto; /* Pour conserver les proportions de l'image */
+    border-radius: 10px; /* Bord arrondi de l'image */
+  }

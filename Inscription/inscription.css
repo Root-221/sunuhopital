@@ -1,0 +1,35 @@
+ /* CSS personnalisé */
+ body {
+    background-color: #f8f9fa;
+  }
+  .register-container {
+    margin-top: 50px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .register-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .form-control-icon {
+    padding-left: 40px;
+  }
+  .password-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .register-btn {
+    margin-top: 20px;
+    width: 100%; /* Pour centrer le bouton */
+  }
+  .login-link {
+    color: blue;
+  }
+  /* Pour centrer le logo */
+  .logo-center {
+    text-align: center;
+  }
